@@ -1,0 +1,89 @@
+Pierluigi Amorese
+
+
+#include <stdio.h>
+
+int main ()
+{
+int scelta, punteggio;
+char nome[20];
+ 
+        printf ("Ciao, benvenuti a quante ne so, un gioco di quiz sul sistema solare! Vuoi fare una partita?\n");
+        printf ("1.Si giochiamo!!\n");
+        printf ("2.No, non me la sento..\n");
+        scanf ("%d",&scelta);
+
+                if (scelta == 2)
+                {
+                return 0;
+                }
+                else
+                {
+        printf ("Come ti chiami?\n");
+        scanf ("%s",nome);
+        printf("Benvenuto %s!\n", nome);
+
+        printf ("Domanda 1: Quanti sono i pianeti del sistema solare?\n");
+        printf (" 1. Otto\n 2. Nove\n 3. Dieci\n");
+        scanf ("%d",&scelta);
+                if (scelta == 1)
+                {
+                punteggio = punteggio + 0;
+                }
+                else if (scelta == 2)
+                {
+                punteggio = punteggio +5;
+                }
+                else
+                {
+                punteggio = punteggio +0;
+                }
+
+        printf ("Domanda 2: Qual è il terzo pianeta più vicino al sole?\n");
+        printf (" 1. Terra\n 2. Giove\n 3. Venere\n");
+        scanf("%d",&scelta);
+                if (scelta == 1)
+                {
+                punteggio = punteggio +5;
+                }
+                else if (scelta == 2)
+                {
+                punteggio = punteggio +0;
+                }
+                else
+                {
+                punteggio = punteggio +0;
+                }
+
+
+        printf ("Domanda 3: Quanti anelli ha Saturno?\n");
+        printf (" 1. Dieci\n 2. Tre\n 3. Sette\n");
+        scanf ("%d",&scelta);
+                if (scelta == 1)
+                {
+                punteggio = punteggio +0;
+                }
+                else if (scelta == 2)
+                {
+                punteggio = punteggio +0;
+                }
+                else
+                {
+                punteggio = punteggio +5;
+                }
+
+        printf ("Wow %s\n",nome);
+        printf ("Il tuo punteggio è %d\n", punteggio);
+        printf ("Vuoi riprovare?\n");
+        printf (" 1. Si\n 2. No\n");
+        scanf ("%d",&scelta);
+                if (scelta == 1)
+                {
+                main();
+                }
+                else if (scelta == 2)
+                {
+                return 0;
+                }
+        }
+}
