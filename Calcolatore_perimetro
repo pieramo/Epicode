@@ -31,16 +31,16 @@ import math
 
 def quadrato () :
 
-        x = int (input ("Quanto misura il lato?"))
+        x = float (input ("Quanto misura il lato?"))
         print ("Il perimetro del quadrato di lato" ,x, "misura:", x * 4 )
 
 def rettangolo () :
 
-        x = int (input ("Quanto misura la base?"))
-        y = int (input ("Quanto misura l'altezza?"))
+        x = float (input ("Quanto misura la base?"))
+        y = float (input ("Quanto misura l'altezza?"))
         print ("Il perimetro del rettangolo di base" ,x, "e di altezza" ,y, "misura:", ( x + y ) * 2 )
 
 def cerchio () :
 
-        x = int (input ("Quanto misura il raggio?"))
+        x = float (input ("Quanto misura il raggio?"))
         print ("Il perimetro del cerciho di raggio" ,x, "misura:", 2 * math.pi * x )
